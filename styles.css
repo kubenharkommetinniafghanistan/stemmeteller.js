@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    font-family: 'Tektur', sans-serif;
+    font-size: 40px;
+}
+h2 {
+    text-align: center;
+    font-family: 'Tektur', sans-serif;
+    font-size: 30px;
+}
+p {
+    text-align: center;
+    font-family: 'Tektur', sans-serif;
+    font-size: 20px;
+}
+.knapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#knapp{
+ font-family: 'Tektur', sans-serif;
+}
+
+span{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Tektur', sans-serif;
+    font-size: 20px;
+}

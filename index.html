@@ -1,0 +1,45 @@
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
+<title>Stemmemaskin</title>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <h1>Stemmemaskin</h1>
+    <h2>Erikstad Kommune</h2>
+    
+    <p><span id="Parti1">Parti 1</span>
+        <button onclick="Stem(1)" id="knapp">Stem</button>
+    </p>
+
+    <p><span id="Parti2"></span>
+        <button onclick="Stem(2)" id="knapp">Stem</button>
+    </p>
+
+    <p><span id="Parti3"></span>
+        <button onclick="Stem(3)" id="knapp">Stem</button>
+    </p>
+
+    <p><span id="Parti4"></span>
+        <button onclick="Stem(4)" id="knapp">Stem</button>
+    </p>
+
+    <p><span id="Parti5"></span>
+        <button onclick="Stem(5)" id="knapp">Stem</button>
+    </p>
+    <div class="knapper">
+        <button onclick="Neste()" id="knapp">Neste Person</button>
+    </div>
+    <p><br>
+        Innstillinger</p>
+    <div class="knapper">
+        <button onclick="LagreData()" id="knapp">Lagre Data </button>
+        <button onclick="HentData(false, true)" id="knapp">Hent Lagrede Data</button>
+        <button onclick="HentData(true, false)" id="knapp">Les Lagrede Data</button>
+        <button onclick="SlettData()" id="knapp">Slett All Lagrede Data</button>
+        <button onclick="ResultatSide('resultat.html', 'Du må lagre først!')" id="knapp">Se Graf</button>
+    </div>
+
+</body>
+</html>
+<script src="script.js"></script>

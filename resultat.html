@@ -1,0 +1,52 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<html>
+  <!DOCTYPE html>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultat</title>
+</head>
+
+<body>
+  <h1>Resultat</h1>
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+  </body>
+
+</html>
+
+  <script>
+    const ctx = document.getElementById('myChart');
+    
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['AP', 'HØYRE', 'SP', 'FRP', 'MDG'],
+        datasets: [{
+          label: 'Antall Stemmer',
+          data: [localStorage.getItem("PartiStemmer")[0], localStorage.getItem("PartiStemmer")[2], localStorage.getItem("PartiStemmer")[4], localStorage.getItem("PartiStemmer")[6], localStorage.getItem("PartiStemmer")[8]],
+          borderWidth: 0.2,
+          borderColor: '#36A2EB',
+          backgroundColor: '#9BD0F5',
+        }]
+      },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+<body>
+  <button onclick="window.location.href='index.html'" id="knapp">Hjem</button>
+</body>
+<script src="script.js"></script>
